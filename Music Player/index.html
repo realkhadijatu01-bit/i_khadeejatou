@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <audio  controls src="C:\Users\AMK\Desktop\Music Player\Shallipopi_-_Laho.mp3"></audio> -->
+
+    <div id="music-player">
+
+        <form id="search-form" class="search-box">
+            <input type="text" id="search-input" placeholder="search by name or artist">
+            <button type="submit" id="search-button">Search</button>    
+        </form>
+        <img id="song-image" src="./musics/1744013163835.jpg"/>
+        <div id="song-name">Songs</div>
+        <div class="song-artist">Artist</div>
+
+        <input type="range" id="slider-song">
+
+        <div id="music-buttons">
+            <i id="shuffle-song" class="fa-solid fa-shuffle"></i> 
+            <i id="previous-song" class="fa-solid fa-backward-step fa-2x"></i>
+            <i id="pause-song" class="fa-regular fa-circle-play fa-3x"></i>
+            <i id="next-song" class="fa-solid fa-forward-step fa-2x"></i>
+            <i id="repeat-song" class="fa-solid fa-repeat"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/eb09a9dfef.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
